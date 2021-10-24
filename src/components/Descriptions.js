@@ -7,3 +7,5 @@ const Descriptions = () => {
         <SupportingImage/>
     </>
 }
+
+export default Descriptions

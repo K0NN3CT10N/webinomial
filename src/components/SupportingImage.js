@@ -5,3 +5,5 @@ const SupportingImage = () => {
         {/* Insert code here */}
     </>
 }
+
+export default SupportingImage

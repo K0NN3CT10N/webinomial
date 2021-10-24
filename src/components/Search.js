@@ -232,3 +232,4 @@ const PrimarySearchAppBar = () =>  {
   );
 }
 
+export default Search
