@@ -6,4 +6,4 @@ const SupportingImage = () => {
     </>
 }
 
-export default SupportingImage
+export default SupportingImage;
