@@ -1,7 +1,7 @@
-import SearchBar from './components/SearchBar.js'
-import ListOfCards from './components/ListOfCards.js'
-import MainImage from './components/MainImage.js'
-import Footer from './components/Footer.js'
+import SearchBar from './components_1/components_lvl_2/SearchBar'
+import ListOfCards from './components_1/ListOfCards'
+import MainImage from './components_1/MainImage'
+import Footer from './components_1/Footer'
 
 const homePage = () => {
     <>

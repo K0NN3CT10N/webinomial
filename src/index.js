@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {createTheme} from '@mui/material/styles';
 import {MuiThemeProvider} from '@material-ui/core/styles';
 import homePage from './Home';
-import MyCard from './components/MyCard';
+import Search from './components_2/Search';
 
 const theme = createTheme({
   palette: {
@@ -21,7 +21,7 @@ const theme = createTheme({
 ReactDOM.render(
   <React.StrictMode>
     <MuiThemeProvider theme={theme}>
-    <MyCard />
+    <Search />
     </MuiThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')

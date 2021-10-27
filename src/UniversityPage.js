@@ -1,7 +1,7 @@
 import * as React from 'react';
-import SearchBar from './components/SearchBar.js'
-import MainImage from './components/MainImage.js'
-import Footer from './components/Footer.js'
+import SearchBar from './components_1/SearchBar.js'
+import MainImage from './components_1/MainImage.js'
+import Footer from './components_1/Footer.js'
 
 const UniversityPage = () => {
     <>
