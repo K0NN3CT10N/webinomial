@@ -1,8 +1,10 @@
 import * as React from 'react';
+import Button from '@mui/material/Button';
 
-const HeaderButton = () => {
+const HeaderButton = (field) => {
     <>
+        <Button variant="text" href="#{field}">{field}</Button>
     </>
 }
 
-export default HeaderButton
+export default HeaderButton;

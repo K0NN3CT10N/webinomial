@@ -8,4 +8,4 @@ const Descriptions = () => {
     </>
 }
 
-export default Descriptions
+export default Descriptions;

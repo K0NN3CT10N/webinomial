@@ -5,10 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/styles';
 
 const MyCard = () => {
-  const theme = useTheme();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -27,7 +25,7 @@ const MyCard = () => {
             Lizards are a widespread of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
-          <Button color={theme.palette.primary.main}>Secondary</Button>
+          <Button color='secondary'>Secondary</Button>
         </CardContent>
       </CardActionArea>
     </Card>

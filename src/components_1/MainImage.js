@@ -5,4 +5,4 @@ const MainImage = () => {
     </>
 } 
 
-export default MainImage
+export default MainImage;

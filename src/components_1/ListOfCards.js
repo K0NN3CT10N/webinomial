@@ -14,4 +14,4 @@ const ListOfCards = () => {
     </List>
 }
 
-export default ListOfCards
+export default ListOfCards;
