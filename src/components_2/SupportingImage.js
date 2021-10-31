@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const SupportingImage = () => {
     <>
-        {/* Insert code here */}
+        <img src = "../assets/purdue.jpg" style = {{height: 500, width: 1500}}/>
     </>
 }
 

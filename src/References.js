@@ -3,6 +3,8 @@ import * as React from 'react';
 const References = () => {
     <>
         <SearchBar/>
-        {/* Insert some code */}
+        {}
     </>
 }
+
+export default References;
