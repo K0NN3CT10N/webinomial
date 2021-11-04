@@ -8,12 +8,12 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import List from '@mui/material/List';
 
-const ListOfCards = () => {
+const ListOfCards = () => )
     <List>
         <MyCard/>
         <MyCard/>
         <MyCard/>
     </List>
-}
+)
 
 export default ListOfCards;

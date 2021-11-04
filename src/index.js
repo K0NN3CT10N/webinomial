@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createTheme, ThemeProvider} from '@mui/material/styles';
 // import {MuiThemeProvider} from '@material-ui/core/styles';
-import Footer from './components_2/Footer';
+import Descriptions from './components_1/Descriptions';
 
 // const theme = createTheme({
 //   palette: {
@@ -19,9 +18,7 @@ import Footer from './components_2/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-    <Footer />
-    </ThemeProvider>
+    <Descriptions/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -232,5 +232,3 @@ export default function PrimarySearchAppBar() {
     </Box>
   );
 } 
-
-export default Search;

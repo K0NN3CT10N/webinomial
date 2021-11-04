@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import Button from '@mui/material/Button';
 
-const HeaderButton = (field) => (
+const HeaderButton = ({name, bob}) => (
     <>
-        <Button variant="text" href="#{field}">{field.field}</Button>
+        <Button variant="text" href="#{field}">{name} {bob}!</Button>
     </>
 )
 
