@@ -8,11 +8,16 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import List from '@mui/material/List';
 
-const ListOfCards = () => )
+const ListOfCards = () => (
     <List>
         <MyCard/>
         <MyCard/>
         <MyCard/>
+        {/* <MyCard 
+            name = {'University of Illinois Urbana-Champaign'} 
+            stat = {'Ranked 5th in Computer Science'}
+            desc = {'UIUC has lots of opportunities that I took advantage of to explore my interests.\n - Taken from Quora'}
+        /> */}
     </List>
 )
 

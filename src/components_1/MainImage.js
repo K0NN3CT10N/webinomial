@@ -1,8 +1,10 @@
 import * as React from 'react';
 
+import purdue from '../assets/purdue.jpg';
+
 const MainImage = () => (
     <>
-        <img src = "../assets/purdue.jpg" style={{height: auto, width: fill}}/>
+        <img src = {purdue}/>
     </>
 ) 
 

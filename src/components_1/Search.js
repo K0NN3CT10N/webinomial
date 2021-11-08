@@ -17,6 +17,11 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
+import HeaderButton from '../components_2/HeaderButton';
+import Logo from '../components_2/Logo.js';
+
+import '../Theme.css';
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -121,15 +126,16 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+        {/* <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
             <MailIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p>
+        <p>Messages</p> */}
+        <HeaderButton name = {'References'}></HeaderButton>
       </MenuItem>
       <MenuItem>
-        <IconButton
+        {/* <IconButton
           size="large"
           aria-label="show 17 new notifications"
           color="inherit"
@@ -138,10 +144,11 @@ export default function PrimarySearchAppBar() {
             <NotificationsIcon />
           </Badge>
         </IconButton>
-        <p>Notifications</p>
+        <p>Notifications</p> */}
+        <HeaderButton name = {'References'}></HeaderButton>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
+        {/* <IconButton
           size="large"
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
@@ -149,7 +156,7 @@ export default function PrimarySearchAppBar() {
           color="inherit"
         >
           <AccountCircle />
-        </IconButton>
+        </IconButton> */}
         <p>Profile</p>
       </MenuItem>
     </Menu>
@@ -159,7 +166,7 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -167,14 +174,19 @@ export default function PrimarySearchAppBar() {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
+          <HeaderButton name = {'References'}></HeaderButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+
+
+            {/* <Logo></Logo> */}
+
+            
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -187,7 +199,7 @@ export default function PrimarySearchAppBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+            {/* {/* <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
                 <MailIcon />
               </Badge>
@@ -200,8 +212,9 @@ export default function PrimarySearchAppBar() {
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton>
-            <IconButton
+            </IconButton> */}
+            <HeaderButton name = {'References'}></HeaderButton>
+            {/* <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -211,10 +224,10 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="show more"
               aria-controls={mobileMenuId}
@@ -223,7 +236,8 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <MoreIcon />
-            </IconButton>
+            </IconButton> */}
+            <HeaderButton name = {'About Us'}></HeaderButton>
           </Box>
         </Toolbar>
       </AppBar>

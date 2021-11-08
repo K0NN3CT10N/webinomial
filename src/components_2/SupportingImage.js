@@ -1,8 +1,12 @@
 import * as React from 'react';
 
+import '../Theme.css'
+
+import image from '../assets/full_logo.png';
+
 const SupportingImage = () => (
     <>
-        <img src = "../assets/purdue.jpg" style = {{height: 500, width: 1500}}/>
+        <img src = {image}/>
     </>
 )
 

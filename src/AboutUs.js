@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-const AboutUs = () => {
+const AboutUs = () => (
     <>
-        <SearchBar/>
+        <Search/>
         {}
     </>
-}
+)
 
 export default AboutUs;

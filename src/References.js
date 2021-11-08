@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-const References = () => {
+const References = () => (
     <>
         <SearchBar/>
         {}
     </>
-}
+)
 
 export default References;

@@ -5,28 +5,29 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import Button from '@mui/material/Button';
 
-const MyCard = () => {
+
+const MyCard = ({name}, {stat}, {desc}) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 700 }}>
       <CardActionArea>
 
         <CardMedia
           component="img"
-          height="140"
+          height="100"
           // image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          alt={name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard 
+            {name} 
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {stat}
           </Typography>
-          <Button color='secondary'>Secondary</Button>
+          <Typography variant="body2" color="text.secondary">
+            {desc}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card>

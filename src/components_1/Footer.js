@@ -8,24 +8,21 @@ import '../Theme.css';
 const theme = createTheme({
     palette: {
       primary: {
-        main: '#11cb5f',
+        main: '#00b6bc',
       },
       secondary: {
-        main: '#11cb5f',
+        main: '#71d5e4',
       },
       background: {
-          paper: '#11cb5f'
+          paper: '#00b6bc'
       },
     },
   });
 
 const Footer = () => (
-    // <>
-    //     <div id="footer">webinomial.com</div>
-    // </>
     <ThemeProvider theme={theme}>
         <Paper>
-            <Typography variant="h1" >
+            <Typography variant="h6">
                 <center>webinomial.com</center>
             </Typography>
         </Paper>

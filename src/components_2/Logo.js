@@ -1,8 +1,13 @@
 import * as React from 'react';
 
+import '../Theme.css';
+
+import logo from '../assets/logo.png';
+
 const Logo = () => (
     <>
-        <img src = "../assets/full_logo.png" style = {{height: 20, width: 20, top: 5, left: 5}}/>
+        <img src = {logo}/>
+        {/* style = {logoStyle} */}
     </>
 )
 

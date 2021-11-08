@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 // import {MuiThemeProvider} from '@material-ui/core/styles';
-import Descriptions from './components_1/Descriptions';
+import UniversityPage from './UniversityPage';
+
 
 // const theme = createTheme({
 //   palette: {
@@ -18,7 +20,7 @@ import Descriptions from './components_1/Descriptions';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Descriptions/>
+    <UniversityPage name = {'University of Illinois Urbana-Champaign'}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
