@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 
-const MyCard = ({name}, {stat}, {desc}) => {
+const MyCard = ({name, stat, desc, image}) => {
   return (
     <Card sx={{ maxWidth: 700 }}>
       <CardActionArea>
@@ -17,6 +17,7 @@ const MyCard = ({name}, {stat}, {desc}) => {
           height="100"
           // image="/static/images/cards/contemplative-reptile.jpg"
           alt={name}
+          src={image}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

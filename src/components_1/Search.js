@@ -126,16 +126,15 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        {/* <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={4} color="error">
             <MailIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p> */}
-        <HeaderButton name = {'References'}></HeaderButton>
+        <p>Messages</p>
       </MenuItem>
       <MenuItem>
-        {/* <IconButton
+        <IconButton
           size="large"
           aria-label="show 17 new notifications"
           color="inherit"
@@ -144,11 +143,10 @@ export default function PrimarySearchAppBar() {
             <NotificationsIcon />
           </Badge>
         </IconButton>
-        <p>Notifications</p> */}
-        <HeaderButton name = {'References'}></HeaderButton>
+        <p>Notifications</p>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
-        {/* <IconButton
+        <IconButton
           size="large"
           aria-label="account of current user"
           aria-controls="primary-search-account-menu"
@@ -156,7 +154,7 @@ export default function PrimarySearchAppBar() {
           color="inherit"
         >
           <AccountCircle />
-        </IconButton> */}
+        </IconButton>
         <p>Profile</p>
       </MenuItem>
     </Menu>
@@ -166,27 +164,21 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          {/* <IconButton
+          <IconButton
             size="large"
             edge="start"
             color="inherit"
-            aria-label="open drawer"
             sx={{ mr: 2 }}
           >
+          <Logo></Logo>
             <MenuIcon />
-          </IconButton> */}
-          <HeaderButton name = {'References'}></HeaderButton>
+          </IconButton>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-
-
-            {/* <Logo></Logo> */}
-
-            
+          > 
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -199,11 +191,15 @@ export default function PrimarySearchAppBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {/* {/* <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+           
+
+            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
                 <MailIcon />
               </Badge>
             </IconButton>
+
+
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -212,9 +208,10 @@ export default function PrimarySearchAppBar() {
               <Badge badgeContent={17} color="error">
                 <NotificationsIcon />
               </Badge>
-            </IconButton> */}
-            <HeaderButton name = {'References'}></HeaderButton>
-            {/* <IconButton
+            </IconButton>
+
+
+            <IconButton
               size="large"
               edge="end"
               aria-label="account of current user"
@@ -224,10 +221,14 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton> */}
+            </IconButton>
+
+
           </Box>
+
+
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            {/* <IconButton
+            <IconButton
               size="large"
               aria-label="show more"
               aria-controls={mobileMenuId}
@@ -236,9 +237,11 @@ export default function PrimarySearchAppBar() {
               color="inherit"
             >
               <MoreIcon />
-            </IconButton> */}
+            </IconButton>
             <HeaderButton name = {'About Us'}></HeaderButton>
           </Box>
+
+
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

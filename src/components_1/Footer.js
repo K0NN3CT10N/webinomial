@@ -1,7 +1,9 @@
 import * as React from 'react';
+
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Box} from '@mui/system';
 
 import '../Theme.css';
 
@@ -21,11 +23,17 @@ const theme = createTheme({
 
 const Footer = () => (
     <ThemeProvider theme={theme}>
-        <Paper>
-            <Typography variant="h6">
-                <center>webinomial.com</center>
-            </Typography>
-        </Paper>
+        <Box
+          sx={{height: 10,
+          width: 1500,
+          }}
+        >
+          <Paper>
+              <Typography variant="h6">
+                  <center>webinomial.com</center>
+              </Typography>
+          </Paper>
+        </Box>
     </ThemeProvider>
 )
 

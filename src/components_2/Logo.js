@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 
 const Logo = () => (
     <>
-        <img src = {logo}/>
+        <img src = {logo} alt='logo'/>
         {/* style = {logoStyle} */}
     </>
 )
