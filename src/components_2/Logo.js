@@ -1,8 +1,14 @@
 import * as React from 'react';
 
-const Logo = () => {
+import '../Theme.css';
+
+import logo from '../assets/logo.png';
+
+const Logo = () => (
     <>
+        <img src = {logo} alt='logo'/>
+        {/* style = {logoStyle} */}
     </>
-}
+)
 
 export default Logo;

@@ -1,9 +1,13 @@
 import * as React from 'react';
 
-const SupportingImage = () => {
+import '../Theme.css'
+
+import image from '../assets/full_logo.png';
+
+const SupportingImage = () => (
     <>
-        {/* Insert code here */}
+        <img src = {image}/>
     </>
-}
+)
 
 export default SupportingImage;

@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,6 +16,11 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+
+import HeaderButton from '../components_2/HeaderButton';
+import Logo from '../components_2/Logo.js';
+
+import '../Theme.css';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -162,9 +168,9 @@ export default function PrimarySearchAppBar() {
             size="large"
             edge="start"
             color="inherit"
-            aria-label="open drawer"
             sx={{ mr: 2 }}
           >
+          <Logo></Logo>
             <MenuIcon />
           </IconButton>
           <Typography
@@ -172,8 +178,7 @@ export default function PrimarySearchAppBar() {
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
+          > 
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -186,11 +191,15 @@ export default function PrimarySearchAppBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+           
+
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
                 <MailIcon />
               </Badge>
             </IconButton>
+
+
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -200,6 +209,8 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
+
+
             <IconButton
               size="large"
               edge="end"
@@ -211,7 +222,11 @@ export default function PrimarySearchAppBar() {
             >
               <AccountCircle />
             </IconButton>
+
+
           </Box>
+
+
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -223,7 +238,10 @@ export default function PrimarySearchAppBar() {
             >
               <MoreIcon />
             </IconButton>
+            <HeaderButton name = {'About Us'}></HeaderButton>
           </Box>
+
+
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

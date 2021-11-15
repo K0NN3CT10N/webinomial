@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createTheme, ThemeProvider} from '@mui/material/styles';
-// import {MuiThemeProvider} from '@material-ui/core/styles';
-import HeaderButton from './components_2/HeaderButton';
+
+import Home from './Home';
+
 
 // const theme = createTheme({
 //   palette: {
@@ -19,9 +19,7 @@ import HeaderButton from './components_2/HeaderButton';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider>
-    <HeaderButton field='Lol' />
-    </ThemeProvider>
+    <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );
