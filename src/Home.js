@@ -9,7 +9,7 @@ import {Box} from '@mui/system';
 const theme = createTheme({
     palette: {
         primary: {
-            main:  '#dfe16a',
+            main:  '#d1e2c4',
         },
     },        
 });
@@ -18,10 +18,11 @@ const Home = () => (
     <ThemeProvider theme={theme}>
         <Box
             sx={{
-            color: theme.palette.primary.main, 
+            bgcolor: theme.palette.primary.main,
+            margin: 0, 
             }}
         >
-            {/* <Search/> */}
+            <Search/>
             <MainImage/>
             <ListOfCards/>
             <Footer/>

@@ -5,18 +5,16 @@ import Typography from '@mui/material/Typography'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {Box} from '@mui/system';
 
-import '../Theme.css';
-
 const theme = createTheme({
     palette: {
       primary: {
-        main: '#00b6bc',
-      },
-      secondary: {
         main: '#71d5e4',
       },
+      secondary: {
+        main: '#d1e2c4',
+      },
       background: {
-          paper: '#00b6bc'
+          paper: '#71d5e4'
       },
     },
   });
@@ -26,6 +24,7 @@ const Footer = () => (
         <Box
           sx={{height: 10,
           width: 1500,
+          bgcolor: theme.palette.primary.main,
           }}
         >
           <Paper>

@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './Home';
-
+import MyCard from './components_2/MyCard';
 
 // const theme = createTheme({
 //   palette: {
@@ -19,7 +18,7 @@ import Home from './Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <MyCard/>
   </React.StrictMode>,
   document.getElementById('root')
 );

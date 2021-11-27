@@ -20,7 +20,7 @@ const ListOfCards = () => (
                     name = "Purdue University" 
                     stat = "Ranked 4th in Engineering" 
                     desc = "'Purdue Engineering has so much to offer! There are so many...'"
-                    image = 'C:/Documents/Technology/Programming/webinomial/src/assets/purdue_arch.jpg'
+                    image = './purdue_arch.jpg'
                 />
                 <br/>
                 <MyCard

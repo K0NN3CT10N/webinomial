@@ -8,14 +8,17 @@ import { CardActionArea } from '@mui/material';
 
 
 const MyCard = ({name, stat, desc, image}) => {
+  console.log(image)
   return (
-    <Card sx={{ maxWidth: 700 }}>
+    <Card sx={{ 
+              maxWidth: 700,
+              bgcolor: '#f3f3f3'
+              }}>
       <CardActionArea>
 
         <CardMedia
           component="img"
           height="100"
-          // image="/static/images/cards/contemplative-reptile.jpg"
           alt={name}
           src={image}
         />
